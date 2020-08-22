@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:id="@+id/txtview"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_back"
+        android:layout_toEndOf="@+id/txtview"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/back"
+        android:onClick="backOnClick"/>
+
+    <EditText
+        android:id="@+id/txt_msg2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtview"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/input_your_message"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:importantForAutofill="no"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_send"
+        android:layout_toEndOf="@id/txt_msg2"
+        android:layout_alignBottom="@id/txt_msg2"
+        android:text="@string/send"
+        android:onClick="sendOnClick"/>
+
+</RelativeLayout>
